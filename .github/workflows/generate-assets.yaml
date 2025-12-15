@@ -26,7 +26,7 @@ jobs:
         cfn submit --dry-run
 
     - name: Upload zip file as artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: hook-package-zip
         path: hooks/styra-opa-hook.zip
